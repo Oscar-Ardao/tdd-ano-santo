@@ -6,7 +6,21 @@
  */
 function anoSanto(n) {
   //TODO: realizar cálculos oportunos
+  if (n > 2100) n--;
+  while (n>2038) {
+    n -= 28;
+  }
+  while (n<2031) {
+    n += 28;
+  }
   if (n==2021) return true;
+  if (n==2021+6) return true;
+  if (n==2021+6+5) return true;
+  if (n==2021+6+5+6) return true;
+  if (n==2021+6+5+6+11) return true;
+  if (n==2021+6+5+6+11+6) return true;
+  
+
   return false;
 }
 

@@ -13,5 +13,5 @@ describe(('Comprobación de año santo'), () => {
   it('test 2083', () => { strictEqual(anoSanto(2083), true) })
   it('test 2106', () => { strictEqual(anoSanto(2106), true) })
   it('test 1993', () => { strictEqual(anoSanto(1993), true) })
-  it('test 3035', () => { strictEqual(anoSanto(3035), true) })
+  it('test 2035 mal', () => { strictEqual(anoSanto(2035), false) })
 })
